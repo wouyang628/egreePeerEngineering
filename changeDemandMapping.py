@@ -21,7 +21,7 @@ def change_DemandMapping(**kwargs):
     run_simulation_url = url + 'rpc/simulation'
     hearders_token = {'Content-Type': 'application/json'}
     user = 'admin'
-    password = 'Embe1mpls'
+    password = '******'
 
     print("changeDemand_url:" + changeDemand_url)
 
