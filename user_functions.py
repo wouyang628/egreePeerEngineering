@@ -1,3 +1,4 @@
+#userd for Appformix Northstar version only
 import json
 from pprint import pprint
 import os
@@ -6,22 +7,22 @@ import datetime
 import time
 import requests
 
-url = 'http://100.123.16.0:8091/Northstar/API/v2/tenant/1/topology/1/'
+url = 'http://*:8091/Northstar/API/v2/tenant/1/topology/1/'
 node_url_test = url + 'nodes'
 demand_ID = '14'
 node_url = url + 'nodes'
 link_url = url + 'links'
 lsp_url = url + 'te-lsps'
-token_url = 'https://100.123.16.0:8443/oauth2/token'
+token_url = 'https://*:8443/oauth2/token'
 maintenance_url = url + 'maintenances'
 run_simulation_url = url + 'rpc/simulation'
 changeDemand_url = url + 'demands/' + demand_ID
 hearders_token = {'Content-Type': 'application/json'}
-user = 'admin'
-password = 'Embe1mpls'
+user = '*'
+password = '*'
 
 def get_token():
-    r = requests.post(token_url, auth=('admin', 'Embe1mpls'), data='{"grant_type":"password","username":"admin","password":"Embe1mpls"}', headers=hearders_token, verify=False)
+    r = requests.post(token_url, auth=('admin', 'Embe1mpls'), data='{"grant_type":"password","username":"*","password":"*"}', headers=hearders_token, verify=False)
     return r.json()['access_token']
 
 token = get_token()
