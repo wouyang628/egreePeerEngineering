@@ -1,4 +1,5 @@
 # We need to import request to access the details of the POST request
+#used for Appformix Northstar version only
 from flask import Flask, request
 from flask_restful import abort
 import commands
