@@ -9,4 +9,5 @@ In this demo:
 
 2.When a peering link is suffering from packet loss,  Healthbot uses its internal User Defined Function (UDF) to trigger API call to Northstar to steer the traffic by mapping the demands to a pre-configured colored SRTE LSP
 
-# Please follow wiki for set up instructions.
+
+**Please follow Wiki for set up instructions.**
