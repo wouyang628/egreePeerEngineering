@@ -8,3 +8,5 @@ In this demo:
 1.Healthbot monitors packet loss on peering links;
 
 2.When a peering link is suffering from packet loss,  Healthbot uses its internal User Defined Function (UDF) to trigger API call to Northstar to steer the traffic by mapping the demands to a pre-configured colored SRTE LSP
+
+Please follow wiku for set up instructions.
